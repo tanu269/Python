@@ -1,0 +1,43 @@
+# 1. Print Numbers 1 to 10 using while loop
+print("1. Print Numbers 1 to 10:")
+i = 1
+while i <= 10:
+    print(i, end=" ")
+    i += 1
+print("\n")
+
+# 2. Countdown Program using while loop
+print("2. Countdown Program:")
+n = 5  # Example input
+while n >= 0:
+    print(n, end=" ")
+    n -= 1
+print("\n")
+
+# 3. Multiplication Table using for loop
+print("3. Multiplication Table:")
+num = 4  # Example input
+for i in range(1, 11):
+    print(f"{num} x {i} = {num * i}")
+print()
+
+# 4. Skip Multiples of 3 using for loop and continue
+print("4. Skip Multiples of 3:")
+for i in range(1, 21):
+    if i % 3 == 0:
+        continue
+    print(i, end=" ")
+print("\n")
+
+# 5. First 5 Even Numbers using while loop and break
+print("5. First 5 Even Numbers:")
+i = 1
+count = 0
+while True:
+    if i % 2 == 0:
+        print(i, end=" ")
+        count += 1
+        if count == 5:
+            break
+    i += 1
+print()
