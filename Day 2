@@ -1,1 +1,32 @@
+# calculator.py
 
+# Input two numbers
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+
+# Calculate the sum
+sum_result = num1 + num2
+
+# Print the result
+print("The sum is:", sum_result)
+
+
+
+
+
+# messages.py
+
+print("Hello, World!")
+print("Welcome to Python Programming.")
+print("Python is fun to learn.")
+print("Let's write some cool programs.")
+print("Keep practicing every day!")
+
+
+
+def print_info():
+    name = "Vaishnav"
+    age = 20
+    print("My name is", name)
+    print("I am", age, "years old")
+print_info()
