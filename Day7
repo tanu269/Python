@@ -1,0 +1,62 @@
+# 1. Loop through a Tuple
+movies = ("Inception", "Interstellar", "Avengers", "The Dark Knight", "Titanic")
+print("Favorite Movies:")
+for movie in movies:
+    print(movie)
+
+# 2. Use enumerate() with a List
+fruits = ["Apple", "Banana", "Cherry", "Date"]
+print("\nFruits with Index:")
+for index, fruit in enumerate(fruits):
+    print(f"{index}: {fruit}")
+
+# 3. Use .items() on a Dictionary
+students = {"Amit": "A", "Riya": "B+", "Kunal": "A-"}
+print("\nStudent Grades:")
+for student, grade in students.items():
+    print(f"{student}: {grade}")
+
+# 4. Use .values() on a Dictionary
+countries = {"India": "New Delhi", "USA": "Washington D.C.", "Japan": "Tokyo"}
+print("\nCapitals:")
+for capital in countries.values():
+    print(capital)
+
+# 5. Loop through a Set
+animals = {"Lion", "Tiger", "Zebra", "Elephant"}
+print("\nAnimals:")
+for animal in animals:
+    print(animal)
+
+# 6. Loop Through Dictionary Keys Only
+products = {"Pen": 10, "Notebook": 40, "Eraser": 5}
+print("\nProduct Names:")
+for product in products.keys():
+    print(product)
+
+# 7. Loop with range() to Generate Even Numbers
+print("\nFirst 10 Even Numbers:")
+for num in range(2, 21, 2):
+    print(num)
+
+# 8. Loop Through Nested Dictionary
+students = {
+    "Amit": {"age": 20, "grade": "A"},
+    "Riya": {"age": 21, "grade": "B+"},
+    "Kunal": {"age": 22, "grade": "A-"}
+}
+print("\nStudent Details:")
+for name, details in students.items():
+    print(f"{name} - Grade: {details['grade']}")
+
+# 9. Loop Through a String
+user_input = "Python"
+print("\nCharacters in String:")
+for char in user_input:
+    print(char)
+
+# 10. Use enumerate() to Build a Menu
+menu = ["Pizza", "Burger", "Pasta", "Salad"]
+print("\nMenu:")
+for index, item in enumerate(menu, start=1):
+    print(f"{index}. {item}")
