@@ -1,0 +1,104 @@
+# DAY 4: BASIC OPERATORS ASSIGNMENTS
+
+# Assignment 1: Calculator
+print("Assignment 1: Calculator")
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+op = input("Enter operation (+, -, *, /): ")
+if op == "+":
+    print("Result:", num1 + num2)
+elif op == "-":
+    print("Result:", num1 - num2)
+elif op == "*":
+    print("Result:", num1 * num2)
+elif op == "/":
+    print("Result:", num1 / num2)
+else:
+    print("Invalid operator")
+
+# Assignment 2: Comparison Practice
+print("\nAssignment 2: Comparison Practice")
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+print("a > b:", a > b)
+print("a < b:", a < b)
+print("a == b:", a == b)
+print("a != b:", a != b)
+print("a >= b:", a >= b)
+print("a <= b:", a <= b)
+
+# Assignment 3: Logical Test
+print("\nAssignment 3: Logical Test")
+age = int(input("Enter your age: "))
+country = input("Enter your country: ")
+if age > 18 and country.lower() == "india":
+    print("Eligible")
+else:
+    print("Not Eligible")
+
+# Assignment 4: Membership Game
+print("\nAssignment 4: Membership Game")
+colors = ["red", "blue", "green", "yellow"]
+user_color = input("Enter a color: ")
+if user_color.lower() in colors:
+    print("Yes, it's in the list.")
+else:
+    print("No, not in the list.")
+
+# Assignment 5: Bitwise Fun
+print("\nAssignment 5: Bitwise Fun")
+x = 6
+y = 3
+print("x =", x, "| Binary:", bin(x))
+print("y =", y, "| Binary:", bin(y))
+print("x & y:", x & y, "| Binary:", bin(x & y))
+print("x | y:", x | y, "| Binary:", bin(x | y))
+print("x ^ y:", x ^ y, "| Binary:", bin(x ^ y))
+
+# Assignment 6: Even or Odd
+print("\nAssignment 6: Even or Odd")
+number = int(input("Enter a number: "))
+if number % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
+
+# Assignment 7: Swap Two Variables (No third variable)
+print("\nAssignment 7: Swap Two Variables")
+a = int(input("Enter a: "))
+b = int(input("Enter b: "))
+a = a + b
+b = a - b
+a = a - b
+print("After swapping: a =", a, ", b =", b)
+
+# Assignment 8: Voter Eligibility Checker
+print("\nAssignment 8: Voter Eligibility Checker")
+age = int(input("Enter your age: "))
+citizen = input("Are you a citizen (yes/no): ")
+if age >= 18 and citizen.lower() == "yes":
+    print("You are eligible to vote.")
+else:
+    print("You are not eligible to vote.")
+
+# Assignment 9: Identity and Equality Operator
+print("\nAssignment 9: Identity vs Equality")
+list1 = [1, 2, 3]
+list2 = [1, 2, 3]
+print("list1 == list2:", list1 == list2)  # True (values are same)
+print("list1 is list2:", list1 is list2)  # False (different objects)
+
+# Assignment 10: All Assignment Operators Practice
+print("\nAssignment 10: Assignment Operators Practice")
+x = 10
+print("Initial x:", x)
+x += 5
+print("x += 5:", x)
+x -= 3
+print("x -= 3:", x)
+x *= 2
+print("x *= 2:", x)
+x /= 4
+print("x /= 4:", x)
+x %= 3
+print("x %= 3:", x)
