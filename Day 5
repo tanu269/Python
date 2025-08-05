@@ -1,0 +1,108 @@
+import random
+
+# 1. Number Sign Checker
+print("1. Number Sign Checker")
+num = float(input("Enter a number: "))
+if num > 0:
+    print("Positive number")
+elif num < 0:
+    print("Negative number")
+else:
+    print("Zero")
+
+# 2. Driving Eligibility
+print("\n2. Driving Eligibility")
+age = int(input("Enter your age: "))
+if age >= 18:
+    print("Eligible for Driving License")
+else:
+    print("Not Eligible")
+
+# 3. Grading System
+print("\n3. Grading System")
+marks = int(input("Enter your marks: "))
+if marks >= 90:
+    print("Grade A")
+elif marks >= 75:
+    print("Grade B")
+elif marks >= 60:
+    print("Grade C")
+else:
+    print("Grade F")
+
+# 4. Nested Login Check
+print("\n4. Nested Login Check")
+is_logged_in = True
+is_admin = False
+if is_logged_in:
+    if is_admin:
+        print("Welcome Admin")
+    else:
+        print("Welcome User")
+else:
+    print("Please log in")
+
+# 5. Max of 3 Numbers
+print("\n5. Max of 3 Numbers")
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+c = int(input("Enter third number: "))
+if a >= b and a >= c:
+    print("Max number is:", a)
+elif b >= a and b >= c:
+    print("Max number is:", b)
+else:
+    print("Max number is:", c)
+
+# 6. Even or Odd Checker
+print("\n6. Even or Odd Checker")
+n = int(input("Enter a number: "))
+if n % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
+
+# 7. Password Validator
+print("\n7. Password Validator")
+password = input("Enter password: ")
+if password == "admin123":
+    print("Access Granted")
+else:
+    print("Access Denied")
+
+# 8. Leap Year Checker
+print("\n8. Leap Year Checker")
+year = int(input("Enter a year: "))
+if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+    print(year, "is a Leap Year")
+else:
+    print(year, "is NOT a Leap Year")
+
+# 9. Temperature Converter
+print("\n9. Temperature Converter")
+temp = float(input("Enter temperature: "))
+unit = input("Enter unit (C/F): ")
+if unit.upper() == "C":
+    fahrenheit = (temp * 9/5) + 32
+    print("Temperature in Fahrenheit:", fahrenheit)
+elif unit.upper() == "F":
+    celsius = (temp - 32) * 5/9
+    print("Temperature in Celsius:", celsius)
+else:
+    print("Invalid unit")
+
+# 10. Rock, Paper, Scissors Game
+print("\n10. Rock, Paper, Scissors Game")
+user = input("Enter your choice (rock/paper/scissors): ").lower()
+choices = ["rock", "paper", "scissors"]
+computer = random.choice(choices)
+print("Computer chose:", computer)
+
+if user == computer:
+    print("It's a draw!")
+elif (user == "rock" and computer == "scissors") or \
+     (user == "scissors" and computer == "paper") or \
+     (user == "paper" and computer == "rock"):
+    print("You win!")
+else:
+    print("You lose!")
