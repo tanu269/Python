@@ -1,0 +1,26 @@
+# Day 3: Variables & Data Types Assignment
+
+# 1. Variables
+name = "Vaishnav"
+age = 20
+is_student = True
+
+# 2. Print types
+print("Type of name:", type(name))
+print("Type of age:", type(age))
+print("Type of is_student:", type(is_student))
+
+# 3. Convert string to int and add 10
+str_num = "45"
+int_num = int(str_num)
+result = int_num + 10
+print("Result after adding 10:", result)
+
+# 4. Convert float to int
+my_float = 25.78
+converted_int = int(my_float)
+print("Float to int conversion:", converted_int)
+
+# 5. Type checks after conversion
+print("Type after conversion (str to int):", type(int_num))
+print("Type after conversion (float to int):", type(converted_int))
